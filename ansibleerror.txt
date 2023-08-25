@@ -1,0 +1,64 @@
+CMD: ansible all -i inv -m shell -a "uname -a" -bk -vvv
+ansible 2.9.27
+  config file = /home/kp113/ansible/ansible.cfg
+  configured module search path = [u'/adshome/kp113/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.5 (default, May 30 2023, 03:38:55) [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Using /home/kp113/ansible/ansible.cfg as config file
+SSH password: 
+host_list declined parsing /home/kp113/ansible/inv as it did not pass its verify_file() method
+script declined parsing /home/kp113/ansible/inv as it did not pass its verify_file() method
+auto declined parsing /home/kp113/ansible/inv as it did not pass its verify_file() method
+Parsed /home/kp113/ansible/inv inventory source with ini plugin
+Skipping callback 'actionable', as we already have a stdout callback.
+Skipping callback 'counter_enabled', as we already have a stdout callback.
+Skipping callback 'debug', as we already have a stdout callback.
+Skipping callback 'dense', as we already have a stdout callback.
+Skipping callback 'dense', as we already have a stdout callback.
+Skipping callback 'full_skip', as we already have a stdout callback.
+Skipping callback 'json', as we already have a stdout callback.
+Skipping callback 'minimal', as we already have a stdout callback.
+Skipping callback 'null', as we already have a stdout callback.
+Skipping callback 'oneline', as we already have a stdout callback.
+Skipping callback 'selective', as we already have a stdout callback.
+Skipping callback 'skippy', as we already have a stdout callback.
+Skipping callback 'stderr', as we already have a stdout callback.
+Skipping callback 'unixy', as we already have a stdout callback.
+Skipping callback 'yaml', as we already have a stdout callback.
+META: ran handlers
+<lgpecput0001613.gso.aexp.com> ESTABLISH SSH CONNECTION FOR USER: None
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 lgpecput0001613.gso.aexp.com '/bin/bash -c '"'"'( umask 77 && mkdir -p "` echo /tmp/ `"&& mkdir "` echo /tmp/ansible-tmp-1692947666.98-4608-34412464111716 `" && echo ansible-tmp-1692947666.98-4608-34412464111716="` echo /tmp/ansible-tmp-1692947666.98-4608-34412464111716 `" ) && sleep 0'"'"''
+<lgpecput0001613.gso.aexp.com> (0, 'ansible-tmp-1692947666.98-4608-34412464111716=/tmp/ansible-tmp-1692947666.98-4608-34412464111716\n', 'This system is American Express (AXP) property.\nThis system is restricted to authorized individuals for business purposes.\nIndividuals should not have an expectation of privacy when using this system.\nIndividuals responsible for unauthorized access or inappropriate use resulting\nin damages to AXP or others may be subject to civil or criminal prosecution.\n\n*********************************\n**     AA    DDDDDDD   SSSSS   **\n**    AAAA    DD   DD SS   SS  ** NOTICE: This system uses ADS for\n**   AA  AA   DD   DD SS       ** authentication and authorization.\n**  AAAAAAAA  DD   DD  SSSSS   **\n**  AA    AA  DD   DD      SS  ** Please use your ADS credentials\n**  AA    AA  DD   DD SS   SS  ** to log into this server.\n**  AA    AA DDDDDDD   SSSSS   **\n*********************************\n\n')
+<lgpecput0001613.gso.aexp.com> Attempting python interpreter discovery
+<lgpecput0001613.gso.aexp.com> ESTABLISH SSH CONNECTION FOR USER: None
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 lgpecput0001613.gso.aexp.com '/bin/bash -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+<lgpecput0001613.gso.aexp.com> (0, 'PLATFORM\nLinux\nFOUND\n/usr/bin/python3.6\n/usr/bin/python2.7\n/usr/libexec/platform-python\n/usr/bin/python3\nENDFOUND\n', '')
+<lgpecput0001613.gso.aexp.com> ESTABLISH SSH CONNECTION FOR USER: None
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 lgpecput0001613.gso.aexp.com '/bin/bash -c '"'"'/usr/bin/python3.6 && sleep 0'"'"''
+<lgpecput0001613.gso.aexp.com> (0, '{"platform_dist_result": ["redhat", "8.8", "Ootpa"], "osrelease_content": "NAME=\\"Red Hat Enterprise Linux\\"\\nVERSION=\\"8.8 (Ootpa)\\"\\nID=\\"rhel\\"\\nID_LIKE=\\"fedora\\"\\nVERSION_ID=\\"8.8\\"\\nPLATFORM_ID=\\"platform:el8\\"\\nPRETTY_NAME=\\"Red Hat Enterprise Linux 8.8 (Ootpa)\\"\\nANSI_COLOR=\\"0;31\\"\\nCPE_NAME=\\"cpe:/o:redhat:enterprise_linux:8::baseos\\"\\nHOME_URL=\\"https://www.redhat.com/\\"\\nDOCUMENTATION_URL=\\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8\\"\\nBUG_REPORT_URL=\\"https://bugzilla.redhat.com/\\"\\n\\nREDHAT_BUGZILLA_PRODUCT=\\"Red Hat Enterprise Linux 8\\"\\nREDHAT_BUGZILLA_PRODUCT_VERSION=8.8\\nREDHAT_SUPPORT_PRODUCT=\\"Red Hat Enterprise Linux\\"\\nREDHAT_SUPPORT_PRODUCT_VERSION=\\"8.8\\"\\n"}\n', '')
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<lgpecput0001613.gso.aexp.com> PUT /adshome/kp113/.ansible/tmp/ansible-local-4553MEZrwc/tmp9u9qF6 TO /tmp/ansible-tmp-1692947666.98-4608-34412464111716/AnsiballZ_command.py
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 sftp -o BatchMode=no -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 '[lgpecput0001613.gso.aexp.com]'
+<lgpecput0001613.gso.aexp.com> (0, 'sftp> put /adshome/kp113/.ansible/tmp/ansible-local-4553MEZrwc/tmp9u9qF6 /tmp/ansible-tmp-1692947666.98-4608-34412464111716/AnsiballZ_command.py\n', '')
+<lgpecput0001613.gso.aexp.com> ESTABLISH SSH CONNECTION FOR USER: None
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 lgpecput0001613.gso.aexp.com '/bin/bash -c '"'"'chmod u+x /tmp/ansible-tmp-1692947666.98-4608-34412464111716/ /tmp/ansible-tmp-1692947666.98-4608-34412464111716/AnsiballZ_command.py && sleep 0'"'"''
+<lgpecput0001613.gso.aexp.com> (0, '', '')
+<lgpecput0001613.gso.aexp.com> ESTABLISH SSH CONNECTION FOR USER: None
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 -tt lgpecput0001613.gso.aexp.com '/bin/bash -c '"'"'pbrun /bin/su -  '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-fhranseamflxnnhoshrszkwwdjwvecbr ; /usr/libexec/platform-python /tmp/ansible-tmp-1692947666.98-4608-34412464111716/AnsiballZ_command.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+Escalation succeeded
+<lgpecput0001613.gso.aexp.com> (1, '', 'Shared connection to lgpecput0001613.gso.aexp.com closed.\r\n')
+<lgpecput0001613.gso.aexp.com> Failed to connect to the host via ssh: Shared connection to lgpecput0001613.gso.aexp.com closed.
+<lgpecput0001613.gso.aexp.com> ESTABLISH SSH CONNECTION FOR USER: None
+<lgpecput0001613.gso.aexp.com> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o ConnectTimeout=10 -o ControlPath=/home/kp113/.ansible/cp/1aca06e6c2 lgpecput0001613.gso.aexp.com '/bin/bash -c '"'"'rm -f -r /tmp/ansible-tmp-1692947666.98-4608-34412464111716/ > /dev/null 2>&1 && sleep 0'"'"''
+<lgpecput0001613.gso.aexp.com> (0, '', '')
+lgpecput0001613.gso.aexp.com | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to lgpecput0001613.gso.aexp.com closed.\r\n", 
+    "module_stdout": "", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
